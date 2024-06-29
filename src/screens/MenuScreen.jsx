@@ -24,7 +24,9 @@ const MenuScreen = () => {
         {loading ? (
           <Loader />
         ) : error ? (
-          <Error>Error while fetching pizzas {error}</Error>
+          <Error>
+            Error while fetching pizzas {error}
+          </Error>
         ) : (
           <Row>
             <Filters />
