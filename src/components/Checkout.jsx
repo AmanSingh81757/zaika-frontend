@@ -17,8 +17,8 @@ const Checkout = ({ subTotal }) => {
   return (
     <>
       {loading && <Loader />}
-      {error && <Error error="something went wrong" />}
-      {success && <Success success="order placed successfully" />}
+      {error && <Error error="Something went wrong" />}
+      {success && <Success success="order placed successfully!!" />}
       <StripeCheckout
         amount={subTotal * 100}
         shippingAddress
